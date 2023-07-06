@@ -22,13 +22,17 @@ It is intended for educational and research purposes and showcases the building 
 
 1. Open Terminal.
 2. Navigate to the root directory of the project.
-3. Run the `run.sh` script to build and execute the application:
+3. Run the `make` to build the application:
 
     ```sh
-    ./run.sh
+    make
     ```
 
-    This script contains the necessary CMake commands to build the project.
+4. Then you can open the app:
+
+    ```sh
+    make open
+    ```
 
 ## Structure of the Project
 

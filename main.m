@@ -18,14 +18,22 @@
 
 }
 
+// Answer question:
+//
+// - why do we have two NSMenu
+// - why do we have two Menu Item
+// (comment the whole piece of code)
 - (void)setupMainMenu {
   // Create main menu
   NSMenu *mainMenu = [[NSMenu alloc] init];
   
-  // Create app menu and add "Quit" item
-  NSMenuItem *appMenuItem = [[NSMenuItem alloc] init];
+  // Create application menu
   NSMenu *appMenu = [[NSMenu alloc] init];
-  NSMenuItem *quitItem = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@"q"];
+
+  NSMenuItem *appMenuItem = [[NSMenuItem alloc] init];
+  NSMenuItem *quitItem = [[NSMenuItem alloc] initWithTitle:@"Quit"
+                                                    action:@selector(terminate:)
+                                             keyEquivalent:@"q"];
   [quitItem setKeyEquivalentModifierMask:NSEventModifierFlagCommand];
   [appMenu addItem:quitItem];
   [appMenuItem setSubmenu:appMenu];
